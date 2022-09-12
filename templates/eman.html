@@ -82,7 +82,8 @@
       <main class="mt-4">
         <section aria-label="profile-section">
           <div class="max-w-7xl mx-auto pb-4 px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-lg shadow relative pb-8">
+            <!-- mobile view -->
+            <div class="bg-white rounded-lg shadow relative pb-8 sm:hidden ">
               
                 <img
                   class="bg-gray-500 h-24 w-24 rounded-full flex justify-center absolute top-5 left-5"
@@ -153,6 +154,78 @@
                 
               </div>
             </div>
+
+             <!-- desktop view -->
+             <div class="bg-white rounded-lg shadow   relative p-8 hidden sm:block">
+              <div class="flex flex-row space-x-8">
+                <div class="">
+                  <img
+                    class=" bg-gray-500 h-24 w-24 rounded-lg border-2 border-gray-200 "
+                    height="50px"b
+                    width="50px"
+                    src="https://cims.cidb.gov.my/pbsearch/Document/PersonnelImage/880924145209.jpg"
+                  />
+                </div>
+                 <div aria-label="profile-info" class="">
+                  <div aria-label="name" class="mt2  flex flex-row items-center">
+                    <h1 class="text-xl text-black font-bold pr-2"> SAFARUDDIN BIN RIDZUAN
+                    </h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="deepskyblue" class="w-6 h-6">
+                      <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+  
+                  <div aria-label="company-name" class="text-body-medium break-words">
+                    <p class="text-gray font-medium">
+                      Tenaga Nasional Berhad
+                    </p>
+                  </div>
+                  <ul aria-label="roles" class="pv-text-details__right-panel ">
+                    <li class="">
+                      <p class="text-gray-500 text-sm font-medium">
+                        Solar Technician
+                      </p>
+                    </li>
+                    <div class="text-gray-500 text-xl font-medium flex flex-row ">Scout ID :<p class="ml-2 text-red-500 font-bold">ESP 01</p></div>
+                  </ul>
+  
+                  
+                </div>
+                <div aria-label="backgound photo button"
+                  class=" h-10 w-10 rounded-full flex justify-center items-center absolute top-4 right-4 "
+                >
+                <button class="" type="button" data-modal-toggle="edit-profile-form">
+                <li-icon
+                  aria-hidden="true"
+                  type="pencil-icon"
+                  class="artdeco-button__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="gray"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M21.13 2.86a3 3 0 00-4.17 0l-13 13L2 22l6.19-2L21.13 7a3 3 0 000-4.16zM6.77 18.57l-1.35-1.34L16.64 6 18 7.35z"
+                    ></path>
+                  </svg>
+                </li-icon>
+                </button>
+              
+                </div>
+                
+                </div>
+                
+               
+              
+
+            </div>
+
+
           </div>
         </section>
 
@@ -432,8 +505,6 @@
         </section>
 
 
-
-
         <section aria-label="activity section">
           <div class="max-w-7xl mx-auto pb-4 px-4 sm:px-6 lg:px-8">
             <div class="bg-white rounded-lg shadow relative ">
@@ -451,76 +522,22 @@
                 <span class="font-bold text-gray-600 text-md">Posted Course</span>
 
                 <div class="relative h-28 overflow-hidden ">
-                  <div aria-label="item-1"
-                    class="duration-700 ease-in-out absolute top-2 inset-0 transition-all transform -translate-x-full "
-                    data-carousel-item=""
-                  >
-                    <div
-                      class="bg-neutral-500 p-2 mx-2 relative"
-                    >
-                      <a
-                        class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
-                        href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
-                      >
-                        <h3 class="text-lg text-white font-medium">
-                          <strong>Grid Power System</strong>
-                        </h3>
-                        <p class="font-normal text-white">
-                          Concept and Theory
-                        </p>
-                        <p class="font-medium text-sky-400">
-                          See all details
-                        </p>
-                      </a>
-
-                        <a
-                          class="app-aware-link link-without-visited-state"
-                          href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
-                        >
-                          <button
-                            class="absolute top-4 right-4"
-                            tabindex="-1"
-                            type="button"
-                          >
-                            <li-icon
-                              aria-hidden="true"
-                              type="pencil-icon"
-                              class="artdeco-button__icon"
-                              size="small"
-                              ><svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 16 16"
-                                data-supported-dps="16x16"
-                                fill="white"
-                                class="mercado-match"
-                                width="20"
-                                height="20"
-                                focusable="false"
-                              >
-                                <path
-                                  d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
-                                ></path>
-                              </svg>
-                            </li-icon>
-                          </button>
-                        </a>
-                    </div>
-                  </div>
+                  
                   <div aria-label="item-1"
                     class="duration-700 ease-in-out absolute top-2 inset-0 transition-all transform -translate-x-full z-10"
                     data-carousel-item=""
                   >
                     <div
-                      class="bg-neutral-500 p-2 mx-2 relative"
+                      class="bg-white border border-gray-200 p-2 mx-2 relative"
                     >
                       <a
                         class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
                         href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
                       >
-                        <h3 class="text-lg text-white font-medium">
+                        <h3 class="text-lg text-gray-700 font-medium">
                           <strong>Grid Power System</strong>
                         </h3>
-                        <p class="font-normal text-white">
+                        <p class="font-normal text-gray-700">
                           Concept and Theory
                         </p>
                         <p class="font-medium text-sky-400">
@@ -534,11 +551,11 @@
                         >
                           <button
                             class="absolute top-4 right-4"
-                            tabindex="-1"
                             type="button"
                           >
                             <li-icon
-                              aria-hidden="true"
+                            aria-hidden="true"
+                            tabindex="-1"
                               type="pencil-icon"
                               class="artdeco-button__icon"
                               size="small"
@@ -546,7 +563,7 @@
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 16 16"
                                 data-supported-dps="16x16"
-                                fill="white"
+                                fill="gray"
                                 class="mercado-match"
                                 width="20"
                                 height="20"
@@ -562,60 +579,60 @@
                     </div>
                   </div>
                   <div aria-label="item-1"
-                    class="duration-700 ease-in-out absolute top-2 inset-0 transition-all transform -translate-x-full z-10"
-                    data-carousel-item=""
+                  class="duration-700 ease-in-out absolute top-2 inset-0 transition-all transform -translate-x-full z-10"
+                  data-carousel-item=""
+                >
+                  <div
+                    class="bg-white border border-gray-200 p-2 mx-2 relative"
                   >
-                    <div
-                      class="bg-neutral-500 p-2 mx-2 relative"
+                    <a
+                      class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
+                      href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
                     >
-                      <a
-                        class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
-                        href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
-                      >
-                        <h3 class="text-lg text-white font-medium">
-                          <strong>Grid Power System</strong>
-                        </h3>
-                        <p class="font-normal text-white">
-                          Concept and Theory
-                        </p>
-                        <p class="font-medium text-sky-400">
-                          See all details
-                        </p>
-                      </a>
+                      <h3 class="text-lg text-gray-700 font-medium">
+                        <strong>Grid Power System 2 </strong>
+                      </h3>
+                      <p class="font-normal text-gray-700">
+                        Practical solution
+                      </p>
+                      <p class="font-medium text-sky-400">
+                        See all details
+                      </p>
+                    </a>
 
-                        <a
-                          class="app-aware-link link-without-visited-state"
-                          href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
+                      <a
+                        class="app-aware-link link-without-visited-state"
+                        href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
+                      >
+                        <button
+                          class="absolute top-4 right-4"
+                          tabindex="-1"
+                          type="button"
                         >
-                          <button
-                            class="absolute top-4 right-4"
-                            tabindex="-1"
-                            type="button"
-                          >
-                            <li-icon
-                              aria-hidden="true"
-                              type="pencil-icon"
-                              class="artdeco-button__icon"
-                              size="small"
-                              ><svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 16 16"
-                                data-supported-dps="16x16"
-                                fill="white"
-                                class="mercado-match"
-                                width="20"
-                                height="20"
-                                focusable="false"
-                              >
-                                <path
-                                  d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
-                                ></path>
-                              </svg>
-                            </li-icon>
-                          </button>
-                        </a>
-                    </div>
+                          <li-icon
+                            aria-hidden="true"
+                            type="pencil-icon"
+                            class="artdeco-button__icon"
+                            size="small"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 16 16"
+                              data-supported-dps="16x16"
+                              fill="gray"
+                              class="mercado-match"
+                              width="20"
+                              height="20"
+                              focusable="false"
+                            >
+                              <path
+                                d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
+                              ></path>
+                            </svg>
+                          </li-icon>
+                        </button>
+                      </a>
                   </div>
+                </div>
                 </div>
                 
 
@@ -692,16 +709,16 @@
                       data-carousel-item=""
                     >
                       <div
-                        class="bg-neutral-500 p-2 mx-2 relative "
+                        class="bg-white border border-gray-200 p-2 mx-2 relative "
                       >
                         <a
                           class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
                           href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
                         >
-                          <h3 class="text-lg text-white font-medium">
+                          <h3 class="text-lg text-gray-700 font-medium">
                             <strong>Grid Power System</strong>
                           </h3>
-                          <p class="font-normal text-white">
+                          <p class="font-normal text-gray-700">
                             Concept and Theory
                           </p>
                           <p class="font-medium text-sky-400">
@@ -727,7 +744,7 @@
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 16 16"
                                   data-supported-dps="16x16"
-                                  fill="white"
+                                  fill="gray"
                                   class="mercado-match"
                                   width="20"
                                   height="20"
@@ -742,16 +759,16 @@
                           </a>
                       </div>
                       <div
-                        class="bg-neutral-500 p-2 mx-2 relative "
+                        class="bg-white border border-gray-200 p-2 mx-2 relative "
                       >
                         <a
                           class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
                           href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
                         >
-                          <h3 class="text-lg text-white font-medium">
+                          <h3 class="text-lg text-gray-700 font-medium">
                             <strong>Grid Power System</strong>
                           </h3>
-                          <p class="font-normal text-white">
+                          <p class="font-normal text-gray-700">
                             Concept and Theory
                           </p>
                           <p class="font-medium text-sky-400">
@@ -777,7 +794,7 @@
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 16 16"
                                   data-supported-dps="16x16"
-                                  fill="white"
+                                  fill="gray"
                                   class="mercado-match"
                                   width="20"
                                   height="20"
@@ -791,127 +808,23 @@
                             </button>
                           </a>
                       </div>
-                    </div>
-                    <div aria-label="item-1"
-                    class="duration-700 ease-in-out absolute top-2 inset-0 transition-all transform -translate-x-full z-10 grid grid-cols-2"
-                    data-carousel-item=""
-                  >
-                    <div
-                      class="bg-neutral-500 p-2 mx-2 relative "
-                    >
-                      <a
-                        class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
-                        href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
-                      >
-                        <h3 class="text-lg text-white font-medium">
-                          <strong>Grid Power System</strong>
-                        </h3>
-                        <p class="font-normal text-white">
-                          Concept and Theory
-                        </p>
-                        <p class="font-medium text-sky-400">
-                          See all details
-                        </p>
-                      </a>
-  
-                        <a
-                          class="app-aware-link link-without-visited-state"
-                          href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
-                        >
-                          <button
-                            class="absolute top-4 right-4"
-                            tabindex="-1"
-                            type="button"
-                          >
-                            <li-icon
-                              aria-hidden="true"
-                              type="pencil-icon"
-                              class="artdeco-button__icon"
-                              size="small"
-                              ><svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 16 16"
-                                data-supported-dps="16x16"
-                                fill="white"
-                                class="mercado-match"
-                                width="20"
-                                height="20"
-                                focusable="false"
-                              >
-                                <path
-                                  d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
-                                ></path>
-                              </svg>
-                            </li-icon>
-                          </button>
-                        </a>
-                    </div>
-                    <div
-                      class="bg-neutral-500 p-2 mx-2 relative "
-                    >
-                      <a
-                        class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
-                        href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
-                      >
-                        <h3 class="text-lg text-white font-medium">
-                          <strong>Grid Power System</strong>
-                        </h3>
-                        <p class="font-normal text-white">
-                          Concept and Theory
-                        </p>
-                        <p class="font-medium text-sky-400">
-                          See all details
-                        </p>
-                      </a>
-  
-                        <a
-                          class="app-aware-link link-without-visited-state"
-                          href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
-                        >
-                          <button
-                            class="absolute top-4 right-4"
-                            tabindex="-1"
-                            type="button"
-                          >
-                            <li-icon
-                              aria-hidden="true"
-                              type="pencil-icon"
-                              class="artdeco-button__icon"
-                              size="small"
-                              ><svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 16 16"
-                                data-supported-dps="16x16"
-                                fill="white"
-                                class="mercado-match"
-                                width="20"
-                                height="20"
-                                focusable="false"
-                              >
-                                <path
-                                  d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
-                                ></path>
-                              </svg>
-                            </li-icon>
-                          </button>
-                        </a>
-                    </div>
+                      
                     </div>
                     <div aria-label="item-1"
                       class="duration-700 ease-in-out absolute top-2 inset-0 transition-all transform -translate-x-full z-10 grid grid-cols-2"
                       data-carousel-item=""
                     >
                       <div
-                        class="bg-neutral-500 p-2 mx-2 relative "
+                        class="bg-white border border-gray-200 p-2 mx-2 relative "
                       >
                         <a
                           class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
                           href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
                         >
-                          <h3 class="text-lg text-white font-medium">
+                          <h3 class="text-lg text-gray-700 font-medium">
                             <strong>Grid Power System</strong>
                           </h3>
-                          <p class="font-normal text-white">
+                          <p class="font-normal text-gray-700">
                             Concept and Theory
                           </p>
                           <p class="font-medium text-sky-400">
@@ -937,7 +850,7 @@
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 16 16"
                                   data-supported-dps="16x16"
-                                  fill="white"
+                                  fill="gray"
                                   class="mercado-match"
                                   width="20"
                                   height="20"
@@ -952,16 +865,16 @@
                           </a>
                       </div>
                       <div
-                        class="bg-neutral-500 p-2 mx-2 relative "
+                        class="bg-white border border-gray-200 p-2 mx-2 relative "
                       >
                         <a
                           class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
                           href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
                         >
-                          <h3 class="text-lg text-white font-medium">
+                          <h3 class="text-lg text-gray-700 font-medium">
                             <strong>Grid Power System</strong>
                           </h3>
-                          <p class="font-normal text-white">
+                          <p class="font-normal text-gray-700">
                             Concept and Theory
                           </p>
                           <p class="font-medium text-sky-400">
@@ -987,7 +900,7 @@
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 16 16"
                                   data-supported-dps="16x16"
-                                  fill="white"
+                                  fill="gray"
                                   class="mercado-match"
                                   width="20"
                                   height="20"
@@ -1001,7 +914,9 @@
                             </button>
                           </a>
                       </div>
+                      
                     </div>
+                    
                   </div>
                 
 
