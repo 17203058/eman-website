@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css"
+    />
+    <title>Document</title>
+  </head>
+
+  <body x-data="{ mobileMenu: false }" data-new-gr-c-s-check-loaded="14.1078.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+    <div class="min-h-full bg-stone-100	" >
+      
+      <header class="sticky top-0 z-50 w-full">
+        <nav class="bg-white shadow">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <div class="-ml-2 mr-2 flex items-center md:hidden">
+                            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false" x-on:click="mobileMenu = !mobileMenu">
+                                <!--
+                    Icon when menu is closed.
+    
+                    Heroicon name: outline/menu
+    
+                    Menu open: "hidden", Menu closed: "block"
+                  -->
+                                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                                </svg>
+                                <!--
+                    Icon when menu is open.
+    
+                    Heroicon name: outline/x
+    
+                    Menu open: "block", Menu closed: "hidden"
+                  -->
+                                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex-shrink-0 flex items-center">
+                            <a href="https://scout.eman.my">
+                                <img class="block h-12 w-auto" src="https://scout.eman.my/images/logo.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden md:ml-6 md:flex items-center gap-12">
+                        <a href="https://scout.eman.my#scout" class="text-base font-bold text-black"> Why Scout? </a>
+                        <a href="https://scout.eman.my#benefits" class="text-base font-bold text-black"> Benefits </a>
+                        <a href="https://scout.eman.my/companies" class="text-base font-bold text-black"> Directory </a>
+                    </div>
+    
+                    <div class="hidden relative md:inline-block text-left place-self-center">
+                        <div class="flex flex-shrink-0 gap-2">
+                            <a href="https://scout.eman.my/login" class="rounded-2xl py-2 px-5">
+                                Log in
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+      </header>
+      <nav class="fixed z-50 bg-white w-full drop-shadow-2xl md:hidden" aria-label="Global" x-show="mobileMenu" x-on:click.outside="mobileMenu = false" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90">
+        <div class="max-w-3xl mx-auto px-2 pt-2 pb-3 space-y-1 sm:px-4">
+            <a href="#" class="hover:bg-gray-50 block rounded-md py-2 px-3 text-base font-medium">Log in</a>
+    
+            <a href="#" class="hover:bg-gray-50 block rounded-md py-2 px-3 text-base font-medium">Register</a>
+        </div>
+      </nav>
+      
+
+      <main class="mt-4">
+        <section aria-label="profile-section">
+          <div class="max-w-7xl mx-auto pb-4 px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow relative pb-8">
+              
+                <img
+                  class="bg-gray-500 h-24 w-24 rounded-full flex justify-center absolute top-5 left-5"
+                  height="50px"b
+                  width="50px"
+                  src="https://cims.cidb.gov.my/pbsearch/Document/PersonnelImage/880924145209.jpg"
+                />
+              
+              <div aria-label="backgound photo button"
+                class=" h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5"
+              >
+              <button class="" type="button" data-modal-toggle="edit-profile-form">
+              <li-icon
+                aria-hidden="true"
+                type="pencil-icon"
+                class="artdeco-button__icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  data-supported-dps="24x24"
+                  fill="white"
+                  class="mercado-match"
+                  width="24"
+                  height="24"
+                  focusable="false"
+                >
+                  <path
+                    d="M21.13 2.86a3 3 0 00-4.17 0l-13 13L2 22l6.19-2L21.13 7a3 3 0 000-4.16zM6.77 18.57l-1.35-1.34L16.64 6 18 7.35z"
+                  ></path>
+                </svg>
+              </li-icon>
+              </button>
+            
+              </div>
+
+              <div aria-label="bg-cover" class="">
+                <img
+                  class="static rounded-t-lg"
+                  src="https://static-exp1.licdn.com/sc/h/lortj0v1h4bx9wlwbdx6zs3f"
+                  alt=""
+                />
+              </div>
+              <div aria-label="profile-info" class="pt-10  px-8">
+                
+
+                <div aria-label="name" class="mt2  flex flex-row items-center">
+                  <h1 class="text-xl text-black font-bold pr-2"> SAFARUDDIN BIN RIDZUAN
+                  </h1>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="deepskyblue" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+
+                <div aria-label="company-name" class="text-body-medium break-words">
+                  <p class="text-gray font-medium">
+                    Tenaga Nasional Berhad
+                  </p>
+                </div>
+                <ul aria-label="roles" class="pv-text-details__right-panel ">
+                  <li class="">
+                    <p class="text-gray-500 text-sm font-medium">
+                      Solar Technician
+                    </p>
+                  </li>
+                  <div class="text-gray-500 text-xl font-medium flex flex-row ">Scout ID :<p class="ml-2 text-red-500 font-bold">ESP 01</p></div>
+                </ul>
+
+                
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section aria-label="certificate-section">
+          <div class="max-w-7xl mx-auto pb-4 px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow relative py-8 px-4">
+              
+              <h2 class="text-xl text-black font-bold">
+                Certificate
+              </h2>
+              <!-- desktop view -->
+              <ul class="grid grid-col divide-y divide-gray-600 mt-3 hidden sm:block">
+                <li class="flex flex-row py-4 px-2">
+                  <div class="sm:w-48 w-48  ">
+                      <img
+                        src="https://ecos.st.gov.my/stbluewhite-theme/images/st/logonmoto.png"
+                        class="bg-cover"
+                      />
+                  </div>
+                  <ul class="grid grid-col ">
+                      <li class="flex flex-col ml-2">
+                        <span class="text-lg text-gray-700 font-bold"
+                          >Penjaga Jentera Sistem Voltan Rendah
+
+                          (Tanpa Talian Aerial Dan Stesen Janakuasa)/
+                          PJ-T-1-B-0086-2017</span
+                        >
+                        <div class="text-gray-700 font-semibold mt-1">
+                          PJ-A0
+                        </div>
+                        <div class="text-gray-500 mt-1"> Valid until : 23/08/2024
+                        </div>
+                      </li>
+                      <li class="flex flex-col ml-2">
+                        <span class="text-lg text-gray-700 font-bold"
+                          >Penjaga Jentera Sistem Voltan Rendah
+
+                          (Tanpa Talian Aerial Dan Stesen Janakuasa)/
+                          PJ-T-1-B-0086-2017</span
+                        >
+                        <div class="text-gray-700 font-semibold mt-1">
+                          PJ-A0
+                        </div>
+                        <div class="text-gray-500 mt-1"> Valid until : 23/08/2024
+                        </div>
+                      </li>    
+                      <li class="flex flex-col ml-2">
+                        <span class="text-lg text-gray-700 font-bold"
+                          >Penjaga Jentera Sistem Voltan Rendah
+
+                          (Tanpa Talian Aerial Dan Stesen Janakuasa)/
+                          PJ-T-1-B-0086-2017</span
+                        >
+                        <div class="text-gray-700 font-semibold mt-1">
+                          PJ-A0
+                        </div>
+                        <div class="text-gray-500 mt-1"> Valid until : 23/08/2024
+                        </div>
+                      </li>     
+                    
+                  </ul>
+                </li>
+                <li class="flex flex-row py-4 px-2">
+                  <div class="sm:w-48 w-48  flex justify-center">
+                      <img
+                        src="https://www.cidb.gov.my/themes/cidb/images/logo/logo-cidb.svg"
+                        class="bg-cover"
+                      />
+                  </div>
+                  <ul class="grid grid-col ">
+                      <li class="flex flex-col ml-2">
+                        <span class="text-lg text-gray-700 font-bold"
+                          >Penjaga Jentera Sistem Voltan Rendah
+
+                          (Tanpa Talian Aerial Dan Stesen Janakuasa)/
+                          PJ-T-1-B-0086-2017</span
+                        >
+                        <div class="text-gray-700 font-semibold mt-1">
+                          PJ-A0
+                        </div>
+                        <div class="text-gray-500 mt-1"> Valid until : 23/08/2024
+                        </div>
+                      </li>
+                        
+                    
+                  </ul>
+                </li>
+                <li class="flex flex-row py-4 px-2">
+                  <div class="sm:w-48 w-48 flex justify-center">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Niosh_logo_final.jpg/120px-Niosh_logo_final.jpg"
+                        class="bg-cover"
+                      />
+                  </div>
+                  <ul class="grid grid-col ">
+                      <li class="flex flex-col ml-2">
+                        <span class="text-lg text-gray-700 font-bold"
+                          >Penjaga Jentera Sistem Voltan Rendah
+
+                          (Tanpa Talian Aerial Dan Stesen Janakuasa)/
+                          PJ-T-1-B-0086-2017</span
+                        >
+                        <div class="text-gray-700 font-semibold mt-1">
+                          PJ-A0
+                        </div>
+                        <div class="text-gray-500 mt-1"> Valid until : 23/08/2024
+                        </div>
+                      </li>
+                    
+                    
+                  </ul>
+                </li>
+              </ul>
+              <!-- mobile view -->
+              <ul class="grid grid-col divide-y divide-gray-600 mt-3  sm:hidden space-y-4">
+                <li>
+                    <div class="max-w-sm pt-4">
+                      <img src="https://ecos.st.gov.my/stbluewhite-theme/images/st/logonmoto.png" class="object-cover"/>
+                    </div>
+                    <ul>
+                        <li class="py-4 grid grid-col space-y-2">
+                          <span class="text-md text-gray-800 font-bold"
+                            > Penjaga Jentera Sistem Voltan Rendah (Tanpa Talian Aerial Dan Stesen Janakuasa)/PJ-T-1-B-0086-2017:
+                          </span>
+                          <div class="text-sm text-gray-700  font-semibold">
+                            PJ-A0
+                          </div>
+                          <div class=" text-sm text-gray-700 font-semibold ">
+                            Valid until : 23/08/2024
+                          </div>
+                        </li>
+                        <li class="py-4 grid grid-col space-y-2">
+                          <span class="text-md text-gray-800 font-bold"
+                            > Penjaga Jentera Sistem Voltan Rendah (Tanpa Talian Aerial Dan Stesen Janakuasa)/PJ-T-1-B-0086-2017:
+                          </span>
+                          <div class="text-sm text-gray-700  font-semibold">
+                            PJ-A0
+                          </div>
+                          <div class=" text-sm text-gray-700 font-semibold ">
+                            Valid until : 23/08/2024
+                          </div>
+                        </li>
+                        <li class="py-4 grid grid-col space-y-2">
+                          <span class="text-md text-gray-800 font-bold"
+                            > Penjaga Jentera Sistem Voltan Rendah (Tanpa Talian Aerial Dan Stesen Janakuasa)/PJ-T-1-B-0086-2017:
+                          </span>
+                          <div class="text-sm text-gray-700  font-semibold">
+                            PJ-A0
+                          </div>
+                          <div class=" text-sm text-gray-700 font-semibold ">
+                            Valid until : 23/08/2024
+                          </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                  <div class="max-w-sm pt-4 flex justify-center">
+                    <img src="https://www.cidb.gov.my/themes/cidb/images/logo/logo-cidb.svg" class="object-cover"/>
+                  </div>
+                  <ul>
+                      <li class="py-4 grid grid-col space-y-2">
+                        <span class="text-md text-gray-800 font-bold"
+                          > Penjaga Jentera Sistem Voltan Rendah (Tanpa Talian Aerial Dan Stesen Janakuasa)/PJ-T-1-B-0086-2017:
+                        </span>
+                        <div class="text-sm text-gray-700  font-semibold">
+                          PJ-A0
+                        </div>
+                        <div class=" text-sm text-gray-700 font-semibold ">
+                          Valid until : 23/08/2024
+                        </div>
+                      </li>
+                     
+                  </ul>
+                </li>
+                <li>
+                  <div class="max-w-sm pt-4 flex justify-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Niosh_logo_final.jpg/120px-Niosh_logo_final.jpg" class="object-cover"/>
+                  </div>
+                  <ul>
+                      <li class="py-4 grid grid-col space-y-2">
+                        <span class="text-md text-gray-800 font-bold"
+                          > Penjaga Jentera Sistem Voltan Rendah (Tanpa Talian Aerial Dan Stesen Janakuasa)/PJ-T-1-B-0086-2017:
+                        </span>
+                        <div class="text-sm text-gray-700  font-semibold">
+                          PJ-A0
+                        </div>
+                        <div class=" text-sm text-gray-700 font-semibold ">
+                          Valid until : 23/08/2024
+                        </div>
+                      </li>
+                  </ul>
+                </li>
+                
+                              
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+        <section aria-label="education-section">
+          <div class="max-w-7xl mx-auto pb-4 px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow relative p-8">
+              <h2 class="text-xl text-black font-bold">
+                <span class="visually-hidden">Education</span>
+              </h2>
+
+              <div class="absolute top-4 right-4 flex flex-row space-x-4">
+                <button class="" type="button" data-modal-toggle="add-education-form"
+                  ><li-icon
+                    type="add-icon"
+                    size="medium"
+                    role="img"
+                    aria-label="Add new education"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="gray"
+                      class="mercado-match"
+                      width="30"
+                      height="30"
+                      focusable="false"
+                    >
+                      <path d="M21 13h-8v8h-2v-8H3v-2h8V3h2v8h8z"></path>
+                    </svg> </li-icon
+                ></button>
+                
+              </div>
+
+              
+              <div class="flex flex-row pt-4">
+                <img
+                  src="https://static-exp1.licdn.com/sc/h/67o03j40mpo36w7xf4dt5749m"
+                  class="w-16 h-16"
+                />
+                <div class="flex flex-col ml-4 ">
+                  <span class="text-xl text-gray-700 font-bold relative "
+                    >Universiti Malaya
+                  </span>
+                  <div aria-lable="pencil-icon"
+                  class="absolute right-4"
+                ><button class="" type="button" data-modal-toggle="edit-education-form">
+                  <li-icon
+                    aria-hidden="true"
+                    type="pencil-icon"
+                    class="artdeco-button__icon"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="gray"
+                      class="mercado-match"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path
+                        d="M21.13 2.86a3 3 0 00-4.17 0l-13 13L2 22l6.19-2L21.13 7a3 3 0 000-4.16zM6.77 18.57l-1.35-1.34L16.64 6 18 7.35z"
+                      ></path>
+                    </svg>
+                  </li-icon>
+                  </button></div>
+
+                  
+                  
+                  <div class="text-gray-700 font-semibold mt-1">
+                    Bachelor's degree, Artificial Intelligence
+                  </div>
+                  <div class="text-gray-500 mt-1">2020 - 2023</div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <section aria-label="activity section">
+          <div class="max-w-7xl mx-auto pb-4 px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow relative ">
+              <div class="p-8">
+
+              <div class="flex flex-row space-x-2 items-center">
+                <h2 class="text-lg text-Black font-bold">Activity</h2>
+              </div class="p-8">
+              <!-- for mobile view -->
+              <div aria-label="posted-course"
+                  id="controls-carousel"
+                  class="relative  sm:hidden "
+                  data-carousel="static"
+                >
+                <span class="font-bold text-gray-600 text-md">Posted Course</span>
+
+                <div class="relative h-28 overflow-hidden ">
+                  <div aria-label="item-1"
+                    class="duration-700 ease-in-out absolute top-2 inset-0 transition-all transform -translate-x-full "
+                    data-carousel-item=""
+                  >
+                    <div
+                      class="bg-neutral-500 p-2 mx-2 relative"
+                    >
+                      <a
+                        class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
+                        href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
+                      >
+                        <h3 class="text-lg text-white font-medium">
+                          <strong>Grid Power System</strong>
+                        </h3>
+                        <p class="font-normal text-white">
+                          Concept and Theory
+                        </p>
+                        <p class="font-medium text-sky-400">
+                          See all details
+                        </p>
+                      </a>
+
+                        <a
+                          class="app-aware-link link-without-visited-state"
+                          href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
+                        >
+                          <button
+                            class="absolute top-4 right-4"
+                            tabindex="-1"
+                            type="button"
+                          >
+                            <li-icon
+                              aria-hidden="true"
+                              type="pencil-icon"
+                              class="artdeco-button__icon"
+                              size="small"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16"
+                                data-supported-dps="16x16"
+                                fill="white"
+                                class="mercado-match"
+                                width="20"
+                                height="20"
+                                focusable="false"
+                              >
+                                <path
+                                  d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
+                                ></path>
+                              </svg>
+                            </li-icon>
+                          </button>
+                        </a>
+                    </div>
+                  </div>
+                  <div aria-label="item-1"
+                    class="duration-700 ease-in-out absolute top-2 inset-0 transition-all transform -translate-x-full z-10"
+                    data-carousel-item=""
+                  >
+                    <div
+                      class="bg-neutral-500 p-2 mx-2 relative"
+                    >
+                      <a
+                        class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
+                        href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
+                      >
+                        <h3 class="text-lg text-white font-medium">
+                          <strong>Grid Power System</strong>
+                        </h3>
+                        <p class="font-normal text-white">
+                          Concept and Theory
+                        </p>
+                        <p class="font-medium text-sky-400">
+                          See all details
+                        </p>
+                      </a>
+
+                        <a
+                          class="app-aware-link link-without-visited-state"
+                          href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
+                        >
+                          <button
+                            class="absolute top-4 right-4"
+                            tabindex="-1"
+                            type="button"
+                          >
+                            <li-icon
+                              aria-hidden="true"
+                              type="pencil-icon"
+                              class="artdeco-button__icon"
+                              size="small"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16"
+                                data-supported-dps="16x16"
+                                fill="white"
+                                class="mercado-match"
+                                width="20"
+                                height="20"
+                                focusable="false"
+                              >
+                                <path
+                                  d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
+                                ></path>
+                              </svg>
+                            </li-icon>
+                          </button>
+                        </a>
+                    </div>
+                  </div>
+                  <div aria-label="item-1"
+                    class="duration-700 ease-in-out absolute top-2 inset-0 transition-all transform -translate-x-full z-10"
+                    data-carousel-item=""
+                  >
+                    <div
+                      class="bg-neutral-500 p-2 mx-2 relative"
+                    >
+                      <a
+                        class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
+                        href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
+                      >
+                        <h3 class="text-lg text-white font-medium">
+                          <strong>Grid Power System</strong>
+                        </h3>
+                        <p class="font-normal text-white">
+                          Concept and Theory
+                        </p>
+                        <p class="font-medium text-sky-400">
+                          See all details
+                        </p>
+                      </a>
+
+                        <a
+                          class="app-aware-link link-without-visited-state"
+                          href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
+                        >
+                          <button
+                            class="absolute top-4 right-4"
+                            tabindex="-1"
+                            type="button"
+                          >
+                            <li-icon
+                              aria-hidden="true"
+                              type="pencil-icon"
+                              class="artdeco-button__icon"
+                              size="small"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16"
+                                data-supported-dps="16x16"
+                                fill="white"
+                                class="mercado-match"
+                                width="20"
+                                height="20"
+                                focusable="false"
+                              >
+                                <path
+                                  d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
+                                ></path>
+                              </svg>
+                            </li-icon>
+                          </button>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                
+
+
+                <div aria-lable="carousell-nav-button" class="absolute top-1/2 -left-4 z-30 ">
+                  <button
+                    type="button"
+                    class=" flex items-center justify-center h-full  cursor-pointer group focus:outline-none"
+                    data-carousel-prev=""
+                  >
+                    <span
+                      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-white-800/30 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="w-6 h-6 text-white dark:text-gray-800"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 19l-7-7 7-7"
+                        ></path>
+                      </svg>
+                      <span class="sr-only">Previous</span>
+                    </span>
+                  </button>
+                </div>
+                <div aria-lable="carousell-nav-button" class="absolute top-1/2 -right-4  z-30 ">
+
+                  <button
+                    type="button"
+                    class="flex items-center justify-center h-full  cursor-pointer group focus:outline-none"
+                    data-carousel-next=""
+                  >
+                    <span
+                      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-white-800/30 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="w-6 h-6 text-white dark:text-gray-800"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 5l7 7-7 7"
+                        ></path>
+                      </svg>
+                      <span class="sr-only">Next</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+               <!-- for desktop view -->
+              <div aria-label="posted-course"
+                  id="controls-carousel"
+                  class="relative hidden sm:block"
+                  data-carousel="static "
+                >
+                
+                <span class="font-bold text-gray-600 text-md">Posted Course</span>
+                  <div class="relative h-28 overflow-hidden ">
+                    <div aria-label="item-1"
+                      class="duration-700 ease-in-out absolute top-2 inset-0 transition-all transform -translate-x-full z-10 grid grid-cols-2"
+                      data-carousel-item=""
+                    >
+                      <div
+                        class="bg-neutral-500 p-2 mx-2 relative "
+                      >
+                        <a
+                          class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
+                          href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
+                        >
+                          <h3 class="text-lg text-white font-medium">
+                            <strong>Grid Power System</strong>
+                          </h3>
+                          <p class="font-normal text-white">
+                            Concept and Theory
+                          </p>
+                          <p class="font-medium text-sky-400">
+                            See all details
+                          </p>
+                        </a>
+  
+                          <a
+                            class="app-aware-link link-without-visited-state"
+                            href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
+                          >
+                            <button
+                              class="absolute top-4 right-4"
+                              tabindex="-1"
+                              type="button"
+                            >
+                              <li-icon
+                                aria-hidden="true"
+                                type="pencil-icon"
+                                class="artdeco-button__icon"
+                                size="small"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 16 16"
+                                  data-supported-dps="16x16"
+                                  fill="white"
+                                  class="mercado-match"
+                                  width="20"
+                                  height="20"
+                                  focusable="false"
+                                >
+                                  <path
+                                    d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
+                                  ></path>
+                                </svg>
+                              </li-icon>
+                            </button>
+                          </a>
+                      </div>
+                      <div
+                        class="bg-neutral-500 p-2 mx-2 relative "
+                      >
+                        <a
+                          class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
+                          href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
+                        >
+                          <h3 class="text-lg text-white font-medium">
+                            <strong>Grid Power System</strong>
+                          </h3>
+                          <p class="font-normal text-white">
+                            Concept and Theory
+                          </p>
+                          <p class="font-medium text-sky-400">
+                            See all details
+                          </p>
+                        </a>
+  
+                          <a
+                            class="app-aware-link link-without-visited-state"
+                            href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
+                          >
+                            <button
+                              class="absolute top-4 right-4"
+                              tabindex="-1"
+                              type="button"
+                            >
+                              <li-icon
+                                aria-hidden="true"
+                                type="pencil-icon"
+                                class="artdeco-button__icon"
+                                size="small"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 16 16"
+                                  data-supported-dps="16x16"
+                                  fill="white"
+                                  class="mercado-match"
+                                  width="20"
+                                  height="20"
+                                  focusable="false"
+                                >
+                                  <path
+                                    d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
+                                  ></path>
+                                </svg>
+                              </li-icon>
+                            </button>
+                          </a>
+                      </div>
+                    </div>
+                    <div aria-label="item-1"
+                    class="duration-700 ease-in-out absolute top-2 inset-0 transition-all transform -translate-x-full z-10 grid grid-cols-2"
+                    data-carousel-item=""
+                  >
+                    <div
+                      class="bg-neutral-500 p-2 mx-2 relative "
+                    >
+                      <a
+                        class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
+                        href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
+                      >
+                        <h3 class="text-lg text-white font-medium">
+                          <strong>Grid Power System</strong>
+                        </h3>
+                        <p class="font-normal text-white">
+                          Concept and Theory
+                        </p>
+                        <p class="font-medium text-sky-400">
+                          See all details
+                        </p>
+                      </a>
+  
+                        <a
+                          class="app-aware-link link-without-visited-state"
+                          href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
+                        >
+                          <button
+                            class="absolute top-4 right-4"
+                            tabindex="-1"
+                            type="button"
+                          >
+                            <li-icon
+                              aria-hidden="true"
+                              type="pencil-icon"
+                              class="artdeco-button__icon"
+                              size="small"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16"
+                                data-supported-dps="16x16"
+                                fill="white"
+                                class="mercado-match"
+                                width="20"
+                                height="20"
+                                focusable="false"
+                              >
+                                <path
+                                  d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
+                                ></path>
+                              </svg>
+                            </li-icon>
+                          </button>
+                        </a>
+                    </div>
+                    <div
+                      class="bg-neutral-500 p-2 mx-2 relative "
+                    >
+                      <a
+                        class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
+                        href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
+                      >
+                        <h3 class="text-lg text-white font-medium">
+                          <strong>Grid Power System</strong>
+                        </h3>
+                        <p class="font-normal text-white">
+                          Concept and Theory
+                        </p>
+                        <p class="font-medium text-sky-400">
+                          See all details
+                        </p>
+                      </a>
+  
+                        <a
+                          class="app-aware-link link-without-visited-state"
+                          href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
+                        >
+                          <button
+                            class="absolute top-4 right-4"
+                            tabindex="-1"
+                            type="button"
+                          >
+                            <li-icon
+                              aria-hidden="true"
+                              type="pencil-icon"
+                              class="artdeco-button__icon"
+                              size="small"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16"
+                                data-supported-dps="16x16"
+                                fill="white"
+                                class="mercado-match"
+                                width="20"
+                                height="20"
+                                focusable="false"
+                              >
+                                <path
+                                  d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
+                                ></path>
+                              </svg>
+                            </li-icon>
+                          </button>
+                        </a>
+                    </div>
+                    </div>
+                    <div aria-label="item-1"
+                      class="duration-700 ease-in-out absolute top-2 inset-0 transition-all transform -translate-x-full z-10 grid grid-cols-2"
+                      data-carousel-item=""
+                    >
+                      <div
+                        class="bg-neutral-500 p-2 mx-2 relative "
+                      >
+                        <a
+                          class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
+                          href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
+                        >
+                          <h3 class="text-lg text-white font-medium">
+                            <strong>Grid Power System</strong>
+                          </h3>
+                          <p class="font-normal text-white">
+                            Concept and Theory
+                          </p>
+                          <p class="font-medium text-sky-400">
+                            See all details
+                          </p>
+                        </a>
+  
+                          <a
+                            class="app-aware-link link-without-visited-state"
+                            href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
+                          >
+                            <button
+                              class="absolute top-4 right-4"
+                              tabindex="-1"
+                              type="button"
+                            >
+                              <li-icon
+                                aria-hidden="true"
+                                type="pencil-icon"
+                                class="artdeco-button__icon"
+                                size="small"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 16 16"
+                                  data-supported-dps="16x16"
+                                  fill="white"
+                                  class="mercado-match"
+                                  width="20"
+                                  height="20"
+                                  focusable="false"
+                                >
+                                  <path
+                                    d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
+                                  ></path>
+                                </svg>
+                              </li-icon>
+                            </button>
+                          </a>
+                      </div>
+                      <div
+                        class="bg-neutral-500 p-2 mx-2 relative "
+                      >
+                        <a
+                          class="app-aware-link pv-open-to-carousel-card__content link-without-hover-visited flex-grow-1 pv3"
+                          href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/details/?profileUrn=urn%3Ali%3Afs%5Fnormalized%5Fprofile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk&amp;trk=opento_sprofile_details"
+                        >
+                          <h3 class="text-lg text-white font-medium">
+                            <strong>Grid Power System</strong>
+                          </h3>
+                          <p class="font-normal text-white">
+                            Concept and Theory
+                          </p>
+                          <p class="font-medium text-sky-400">
+                            See all details
+                          </p>
+                        </a>
+  
+                          <a
+                            class="app-aware-link link-without-visited-state"
+                            href="https://www.linkedin.com/in/muhammad%2Daliff%2Dizzuddin%2D278569229/opportunities/job-opportunities/edit?trk=opento_sprofile_topcard"
+                          >
+                            <button
+                              class="absolute top-4 right-4"
+                              tabindex="-1"
+                              type="button"
+                            >
+                              <li-icon
+                                aria-hidden="true"
+                                type="pencil-icon"
+                                class="artdeco-button__icon"
+                                size="small"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 16 16"
+                                  data-supported-dps="16x16"
+                                  fill="white"
+                                  class="mercado-match"
+                                  width="20"
+                                  height="20"
+                                  focusable="false"
+                                >
+                                  <path
+                                    d="M14.13 1.86a3 3 0 00-4.17 0l-7 7L1 15l6.19-2 6.94-7a3 3 0 000-4.16zm-8.36 9.71l-1.35-1.34L9.64 5 11 6.35z"
+                                  ></path>
+                                </svg>
+                              </li-icon>
+                            </button>
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                
+
+
+                <div aria-lable="carousell-nav-button" class="absolute top-1/2 -left-4 z-30 ">
+                  <button
+                    type="button"
+                    class=" flex items-center justify-center h-full  cursor-pointer group focus:outline-none"
+                    data-carousel-prev=""
+                  >
+                    <span
+                      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-white-800/30 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="w-6 h-6 text-white dark:text-gray-800"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 19l-7-7 7-7"
+                        ></path>
+                      </svg>
+                      <span class="sr-only">Previous</span>
+                    </span>
+                  </button>
+                </div>
+                <div aria-lable="carousell-nav-button" class="absolute top-1/2 -right-4  z-30 ">
+
+                  <button
+                    type="button"
+                    class="flex items-center justify-center h-full  cursor-pointer group focus:outline-none"
+                    data-carousel-next=""
+                  >
+                    <span
+                      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-white-800/30 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="w-6 h-6 text-white dark:text-gray-800"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 5l7 7-7 7"
+                        ></path>
+                      </svg>
+                      <span class="sr-only">Next</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <ul aria-label="course-available"
+              class="grid grid-col divide-y divide-gray-600 mt-3">
+              <span class="font-bold text-gray-600 text-xl mb-4" >My Learning</span>
+                
+                <li class="flex flex-row p-2">
+                  <a
+                    tabindex="0"
+                    target="_blank"
+                    href="https://www.linkedin.com/learning/zbrush-modeling-a-cartoon-character-2?courseClaim=AQEp4RJ-xF0BzgAAAYLzgjsl0Hh_VJ9UZ3H0au0SfHeQzGynPPld0kZeDll-UPxefpj2U6VaMtA6JhFKVxdWjc_taM2x6tBbsrZswXrPRrLLDHdvyEBRQfmsHhMKIrRNzMkEdHGBFwd1efuz20dB9r2slVQKcSeZz2eI6lA86t4xeuj4_1KmkVIqF1vKbuIUQZ3qRF_YXhfQIHot1tYEdf4QkqtA93Dv7vFRlacTRWo-v_Z4a4lKCPxL9OziJB1ZIHmAu1u-xes0R1sZc1sAhbsghRqWQmrl48mxmeZGJfZejSiB-DBAi8v39jC40szkjCJCn7WDv56IKRbKOYcrIPWZxovUoumPjoHpmfM42oG9SZ_PZp1wjsZ1If1lDAaEcNCmA3pTqJhnyIINHESfVxUGjeUQJ8pdqSrrEOR016Eal3WrykfuX1OvqtdUynXczEYRWKoOSFW9WLRHxUaVFzhs07j78T7LRwY3gxQdRSgUEhxASx1IRY7UO7TWSd1zO5OH_rYjdBZDl3jvmnGYtRIOQlFg3NNpPT_b8lcDfgCV8B0YxEJonL8d-bpJbPg7_kZmk6nseBZnE6DykW1TjFXgskbsNN35lKoB2-cL3r96I3798JNoefstLmWiIKwnLYQ7R-tNzravQloQd3ITkyhMuK_92HW0w-By3s7ZC6M7MWIucelkqzFsspOTJ0QCLLUQnywe9e2lap38iZnaoBhTChj-NGkUBzdzFQ3bfSR3dF4v6F-ggulGYoJEywhivWMihXdtTkH9TrntF84JUWU7-LMg9vX6-V17GB0-NjLIiYkZkf6g8NG5YwrS7eYyomJ0mKWixDGs-oauSq8wi24b_Kg1z90p4JWn8gSSAWjW-9WNbx2P0dWIATyeNqDuWsptuQAFUTQWQfJr98gsK1hVYRQ-LB9SWnnQbsAaaolX0qWmsLif-PFCo-MtnIWqaQ0dAUY1Sx35Vai4cNLUU-NO0_N_m_saHzLdztGZ9rBsGs3ThfZfnVrUnZhbe5MVLd8miFWt82vvHEgaX6S_q7ykyh0l1oH2qyCgpA&amp;isLearningSubscriber=false&amp;trk=profileSelf_d_flagship3_profile_view_base_learningFeedsp215-frame_2822158_learning"
+                    href=""
+                    aria-hidden="true"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://media-exp1.licdn.com/dms/image/C4E0DAQEr280WHxkM4Q/learning-public-crop_144_256/0/1634577489090?e=1663304400&v=beta&t=bgu-CgZ4R3eR6PwTdMgBZFtl5FAKeuxBkLtpUbfm1NQ"
+                        loading="lazy"
+                        alt=""
+                        class="static"
+                        width="140px"
+                      />
+
+                      <li-icon
+                        aria-hidden="true"
+                        type="play"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-1 bg-gray-900/75 rounded-full"
+                        size="small"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          data-supported-dps="16x16"
+                          fill="white"
+                          class=""
+                          width="16"
+                          height="16"
+                          focusable="false"
+                        >
+                          <path d="M4 14V2l10 6z"></path>
+                        </svg>
+                      </li-icon>
+                    </div>
+                  </a>
+                  <div class="ml2 full-width">
+                    <a
+                      tabindex="0"
+                      target="_blank"
+                      href="https://www.linkedin.com/learning/zbrush-modeling-a-cartoon-character-2?courseClaim=AQEp4RJ-xF0BzgAAAYLzgjsl0Hh_VJ9UZ3H0au0SfHeQzGynPPld0kZeDll-UPxefpj2U6VaMtA6JhFKVxdWjc_taM2x6tBbsrZswXrPRrLLDHdvyEBRQfmsHhMKIrRNzMkEdHGBFwd1efuz20dB9r2slVQKcSeZz2eI6lA86t4xeuj4_1KmkVIqF1vKbuIUQZ3qRF_YXhfQIHot1tYEdf4QkqtA93Dv7vFRlacTRWo-v_Z4a4lKCPxL9OziJB1ZIHmAu1u-xes0R1sZc1sAhbsghRqWQmrl48mxmeZGJfZejSiB-DBAi8v39jC40szkjCJCn7WDv56IKRbKOYcrIPWZxovUoumPjoHpmfM42oG9SZ_PZp1wjsZ1If1lDAaEcNCmA3pTqJhnyIINHESfVxUGjeUQJ8pdqSrrEOR016Eal3WrykfuX1OvqtdUynXczEYRWKoOSFW9WLRHxUaVFzhs07j78T7LRwY3gxQdRSgUEhxASx1IRY7UO7TWSd1zO5OH_rYjdBZDl3jvmnGYtRIOQlFg3NNpPT_b8lcDfgCV8B0YxEJonL8d-bpJbPg7_kZmk6nseBZnE6DykW1TjFXgskbsNN35lKoB2-cL3r96I3798JNoefstLmWiIKwnLYQ7R-tNzravQloQd3ITkyhMuK_92HW0w-By3s7ZC6M7MWIucelkqzFsspOTJ0QCLLUQnywe9e2lap38iZnaoBhTChj-NGkUBzdzFQ3bfSR3dF4v6F-ggulGYoJEywhivWMihXdtTkH9TrntF84JUWU7-LMg9vX6-V17GB0-NjLIiYkZkf6g8NG5YwrS7eYyomJ0mKWixDGs-oauSq8wi24b_Kg1z90p4JWn8gSSAWjW-9WNbx2P0dWIATyeNqDuWsptuQAFUTQWQfJr98gsK1hVYRQ-LB9SWnnQbsAaaolX0qWmsLif-PFCo-MtnIWqaQ0dAUY1Sx35Vai4cNLUU-NO0_N_m_saHzLdztGZ9rBsGs3ThfZfnVrUnZhbe5MVLd8miFWt82vvHEgaX6S_q7ykyh0l1oH2qyCgpA&amp;isLearningSubscriber=false&amp;trk=profileSelf_d_flagship3_profile_view_base_learningFeedsp215-frame_2822158_learning"
+                      id="ember594"
+                      class="ember-view"
+                    >
+                      <div class="flex flex-col ml-4">
+                        <span class="text-lg text-gray-600 font-bold">
+                          ZBrush: Modeling a Cartoon Character
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li class="flex flex-row p-2">
+                  <a
+                    tabindex="0"
+                    target="_blank"
+                    href="https://www.linkedin.com/learning/zbrush-modeling-a-cartoon-character-2?courseClaim=AQEp4RJ-xF0BzgAAAYLzgjsl0Hh_VJ9UZ3H0au0SfHeQzGynPPld0kZeDll-UPxefpj2U6VaMtA6JhFKVxdWjc_taM2x6tBbsrZswXrPRrLLDHdvyEBRQfmsHhMKIrRNzMkEdHGBFwd1efuz20dB9r2slVQKcSeZz2eI6lA86t4xeuj4_1KmkVIqF1vKbuIUQZ3qRF_YXhfQIHot1tYEdf4QkqtA93Dv7vFRlacTRWo-v_Z4a4lKCPxL9OziJB1ZIHmAu1u-xes0R1sZc1sAhbsghRqWQmrl48mxmeZGJfZejSiB-DBAi8v39jC40szkjCJCn7WDv56IKRbKOYcrIPWZxovUoumPjoHpmfM42oG9SZ_PZp1wjsZ1If1lDAaEcNCmA3pTqJhnyIINHESfVxUGjeUQJ8pdqSrrEOR016Eal3WrykfuX1OvqtdUynXczEYRWKoOSFW9WLRHxUaVFzhs07j78T7LRwY3gxQdRSgUEhxASx1IRY7UO7TWSd1zO5OH_rYjdBZDl3jvmnGYtRIOQlFg3NNpPT_b8lcDfgCV8B0YxEJonL8d-bpJbPg7_kZmk6nseBZnE6DykW1TjFXgskbsNN35lKoB2-cL3r96I3798JNoefstLmWiIKwnLYQ7R-tNzravQloQd3ITkyhMuK_92HW0w-By3s7ZC6M7MWIucelkqzFsspOTJ0QCLLUQnywe9e2lap38iZnaoBhTChj-NGkUBzdzFQ3bfSR3dF4v6F-ggulGYoJEywhivWMihXdtTkH9TrntF84JUWU7-LMg9vX6-V17GB0-NjLIiYkZkf6g8NG5YwrS7eYyomJ0mKWixDGs-oauSq8wi24b_Kg1z90p4JWn8gSSAWjW-9WNbx2P0dWIATyeNqDuWsptuQAFUTQWQfJr98gsK1hVYRQ-LB9SWnnQbsAaaolX0qWmsLif-PFCo-MtnIWqaQ0dAUY1Sx35Vai4cNLUU-NO0_N_m_saHzLdztGZ9rBsGs3ThfZfnVrUnZhbe5MVLd8miFWt82vvHEgaX6S_q7ykyh0l1oH2qyCgpA&amp;isLearningSubscriber=false&amp;trk=profileSelf_d_flagship3_profile_view_base_learningFeedsp215-frame_2822158_learning"
+                    href=""
+                    aria-hidden="true"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://media-exp1.licdn.com/dms/image/C4E0DAQEr280WHxkM4Q/learning-public-crop_144_256/0/1634577489090?e=1663304400&v=beta&t=bgu-CgZ4R3eR6PwTdMgBZFtl5FAKeuxBkLtpUbfm1NQ"
+                        loading="lazy"
+                        alt=""
+                        class="static"
+                        width="140px"
+                      />
+
+                      <li-icon
+                        aria-hidden="true"
+                        type="play"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-1 bg-gray-900/75 rounded-full"
+                        size="small"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          data-supported-dps="16x16"
+                          fill="white"
+                          class=""
+                          width="16"
+                          height="16"
+                          focusable="false"
+                        >
+                          <path d="M4 14V2l10 6z"></path>
+                        </svg>
+                      </li-icon>
+                    </div>
+                  </a>
+                  <div class="ml2 full-width">
+                    <a
+                      tabindex="0"
+                      target="_blank"
+                      href="https://www.linkedin.com/learning/zbrush-modeling-a-cartoon-character-2?courseClaim=AQEp4RJ-xF0BzgAAAYLzgjsl0Hh_VJ9UZ3H0au0SfHeQzGynPPld0kZeDll-UPxefpj2U6VaMtA6JhFKVxdWjc_taM2x6tBbsrZswXrPRrLLDHdvyEBRQfmsHhMKIrRNzMkEdHGBFwd1efuz20dB9r2slVQKcSeZz2eI6lA86t4xeuj4_1KmkVIqF1vKbuIUQZ3qRF_YXhfQIHot1tYEdf4QkqtA93Dv7vFRlacTRWo-v_Z4a4lKCPxL9OziJB1ZIHmAu1u-xes0R1sZc1sAhbsghRqWQmrl48mxmeZGJfZejSiB-DBAi8v39jC40szkjCJCn7WDv56IKRbKOYcrIPWZxovUoumPjoHpmfM42oG9SZ_PZp1wjsZ1If1lDAaEcNCmA3pTqJhnyIINHESfVxUGjeUQJ8pdqSrrEOR016Eal3WrykfuX1OvqtdUynXczEYRWKoOSFW9WLRHxUaVFzhs07j78T7LRwY3gxQdRSgUEhxASx1IRY7UO7TWSd1zO5OH_rYjdBZDl3jvmnGYtRIOQlFg3NNpPT_b8lcDfgCV8B0YxEJonL8d-bpJbPg7_kZmk6nseBZnE6DykW1TjFXgskbsNN35lKoB2-cL3r96I3798JNoefstLmWiIKwnLYQ7R-tNzravQloQd3ITkyhMuK_92HW0w-By3s7ZC6M7MWIucelkqzFsspOTJ0QCLLUQnywe9e2lap38iZnaoBhTChj-NGkUBzdzFQ3bfSR3dF4v6F-ggulGYoJEywhivWMihXdtTkH9TrntF84JUWU7-LMg9vX6-V17GB0-NjLIiYkZkf6g8NG5YwrS7eYyomJ0mKWixDGs-oauSq8wi24b_Kg1z90p4JWn8gSSAWjW-9WNbx2P0dWIATyeNqDuWsptuQAFUTQWQfJr98gsK1hVYRQ-LB9SWnnQbsAaaolX0qWmsLif-PFCo-MtnIWqaQ0dAUY1Sx35Vai4cNLUU-NO0_N_m_saHzLdztGZ9rBsGs3ThfZfnVrUnZhbe5MVLd8miFWt82vvHEgaX6S_q7ykyh0l1oH2qyCgpA&amp;isLearningSubscriber=false&amp;trk=profileSelf_d_flagship3_profile_view_base_learningFeedsp215-frame_2822158_learning"
+                      id="ember594"
+                      class="ember-view"
+                    >
+                      <div class="flex flex-col ml-4">
+                        <span class="text-lg text-gray-600 font-bold">
+                          ZBrush: Modeling a Cartoon Character
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li class="flex flex-row p-2">
+                  <a
+                    tabindex="0"
+                    target="_blank"
+                    href="https://www.linkedin.com/learning/zbrush-modeling-a-cartoon-character-2?courseClaim=AQEp4RJ-xF0BzgAAAYLzgjsl0Hh_VJ9UZ3H0au0SfHeQzGynPPld0kZeDll-UPxefpj2U6VaMtA6JhFKVxdWjc_taM2x6tBbsrZswXrPRrLLDHdvyEBRQfmsHhMKIrRNzMkEdHGBFwd1efuz20dB9r2slVQKcSeZz2eI6lA86t4xeuj4_1KmkVIqF1vKbuIUQZ3qRF_YXhfQIHot1tYEdf4QkqtA93Dv7vFRlacTRWo-v_Z4a4lKCPxL9OziJB1ZIHmAu1u-xes0R1sZc1sAhbsghRqWQmrl48mxmeZGJfZejSiB-DBAi8v39jC40szkjCJCn7WDv56IKRbKOYcrIPWZxovUoumPjoHpmfM42oG9SZ_PZp1wjsZ1If1lDAaEcNCmA3pTqJhnyIINHESfVxUGjeUQJ8pdqSrrEOR016Eal3WrykfuX1OvqtdUynXczEYRWKoOSFW9WLRHxUaVFzhs07j78T7LRwY3gxQdRSgUEhxASx1IRY7UO7TWSd1zO5OH_rYjdBZDl3jvmnGYtRIOQlFg3NNpPT_b8lcDfgCV8B0YxEJonL8d-bpJbPg7_kZmk6nseBZnE6DykW1TjFXgskbsNN35lKoB2-cL3r96I3798JNoefstLmWiIKwnLYQ7R-tNzravQloQd3ITkyhMuK_92HW0w-By3s7ZC6M7MWIucelkqzFsspOTJ0QCLLUQnywe9e2lap38iZnaoBhTChj-NGkUBzdzFQ3bfSR3dF4v6F-ggulGYoJEywhivWMihXdtTkH9TrntF84JUWU7-LMg9vX6-V17GB0-NjLIiYkZkf6g8NG5YwrS7eYyomJ0mKWixDGs-oauSq8wi24b_Kg1z90p4JWn8gSSAWjW-9WNbx2P0dWIATyeNqDuWsptuQAFUTQWQfJr98gsK1hVYRQ-LB9SWnnQbsAaaolX0qWmsLif-PFCo-MtnIWqaQ0dAUY1Sx35Vai4cNLUU-NO0_N_m_saHzLdztGZ9rBsGs3ThfZfnVrUnZhbe5MVLd8miFWt82vvHEgaX6S_q7ykyh0l1oH2qyCgpA&amp;isLearningSubscriber=false&amp;trk=profileSelf_d_flagship3_profile_view_base_learningFeedsp215-frame_2822158_learning"
+                    href=""
+                    aria-hidden="true"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://media-exp1.licdn.com/dms/image/C4E0DAQEr280WHxkM4Q/learning-public-crop_144_256/0/1634577489090?e=1663304400&v=beta&t=bgu-CgZ4R3eR6PwTdMgBZFtl5FAKeuxBkLtpUbfm1NQ"
+                        loading="lazy"
+                        alt=""
+                        class="static"
+                        width="140px"
+                      />
+
+                      <li-icon
+                        aria-hidden="true"
+                        type="play"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-1 bg-gray-900/75 rounded-full"
+                        size="small"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          data-supported-dps="16x16"
+                          fill="white"
+                          class=""
+                          width="16"
+                          height="16"
+                          focusable="false"
+                        >
+                          <path d="M4 14V2l10 6z"></path>
+                        </svg>
+                      </li-icon>
+                    </div>
+                  </a>
+                  <div class="ml2 full-width">
+                    <a
+                      tabindex="0"
+                      target="_blank"
+                      href="https://www.linkedin.com/learning/zbrush-modeling-a-cartoon-character-2?courseClaim=AQEp4RJ-xF0BzgAAAYLzgjsl0Hh_VJ9UZ3H0au0SfHeQzGynPPld0kZeDll-UPxefpj2U6VaMtA6JhFKVxdWjc_taM2x6tBbsrZswXrPRrLLDHdvyEBRQfmsHhMKIrRNzMkEdHGBFwd1efuz20dB9r2slVQKcSeZz2eI6lA86t4xeuj4_1KmkVIqF1vKbuIUQZ3qRF_YXhfQIHot1tYEdf4QkqtA93Dv7vFRlacTRWo-v_Z4a4lKCPxL9OziJB1ZIHmAu1u-xes0R1sZc1sAhbsghRqWQmrl48mxmeZGJfZejSiB-DBAi8v39jC40szkjCJCn7WDv56IKRbKOYcrIPWZxovUoumPjoHpmfM42oG9SZ_PZp1wjsZ1If1lDAaEcNCmA3pTqJhnyIINHESfVxUGjeUQJ8pdqSrrEOR016Eal3WrykfuX1OvqtdUynXczEYRWKoOSFW9WLRHxUaVFzhs07j78T7LRwY3gxQdRSgUEhxASx1IRY7UO7TWSd1zO5OH_rYjdBZDl3jvmnGYtRIOQlFg3NNpPT_b8lcDfgCV8B0YxEJonL8d-bpJbPg7_kZmk6nseBZnE6DykW1TjFXgskbsNN35lKoB2-cL3r96I3798JNoefstLmWiIKwnLYQ7R-tNzravQloQd3ITkyhMuK_92HW0w-By3s7ZC6M7MWIucelkqzFsspOTJ0QCLLUQnywe9e2lap38iZnaoBhTChj-NGkUBzdzFQ3bfSR3dF4v6F-ggulGYoJEywhivWMihXdtTkH9TrntF84JUWU7-LMg9vX6-V17GB0-NjLIiYkZkf6g8NG5YwrS7eYyomJ0mKWixDGs-oauSq8wi24b_Kg1z90p4JWn8gSSAWjW-9WNbx2P0dWIATyeNqDuWsptuQAFUTQWQfJr98gsK1hVYRQ-LB9SWnnQbsAaaolX0qWmsLif-PFCo-MtnIWqaQ0dAUY1Sx35Vai4cNLUU-NO0_N_m_saHzLdztGZ9rBsGs3ThfZfnVrUnZhbe5MVLd8miFWt82vvHEgaX6S_q7ykyh0l1oH2qyCgpA&amp;isLearningSubscriber=false&amp;trk=profileSelf_d_flagship3_profile_view_base_learningFeedsp215-frame_2822158_learning"
+                      id="ember594"
+                      class="ember-view"
+                    >
+                      <div class="flex flex-col ml-4">
+                        <span class="text-lg text-gray-600 font-bold">
+                          ZBrush: Modeling a Cartoon Character
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+   
+                
+                
+              </ul>
+              </div>
+              <hr class="bg-gray-800"/>
+              <div class="p-4 flex justify-center">
+                <a
+                  href="https://www.linkedin.com/in/muhammad-aliff-izzuddin-278569229/details/resources?profileUrn=urn%3Ali%3Afsd_profile%3AACoAADk2sDwBpFc08KE0BeHvty1qR7R1cBeLxKk"
+                >
+                  <div class="flex flex-row items-center">
+                    <span class="text-gray-700 text-lg font-medium pr-4">
+                      See recomendations
+                    </span>
+                 
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+       
+        <section aria-label="overlay">
+          <section aria-label="edit-profile">
+            <div id="edit-profile-form" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
+              <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                  <div class="relative bg-white rounded-lg shadow ">
+                      <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="edit-profile-form">
+                          <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          <span class="sr-only">Close modal</span>
+                      </button>
+                      <div class="py-6 px-6 lg:px-8">
+                          <h3 class="mb-4 text-xl font-medium text-gray-900">Edit Profile</h3>
+                          <form class="space-y-6" action="#">
+                              <div class="sm:grid sm:grid-cols-3 sm:items-center sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5">
+                                  <label for="photo" class="block text-sm font-medium text-gray-700">Photo</label>
+                                  <div class="mt-1 sm:col-span-2 sm:mt-0">
+                                    <div class="flex items-center">
+                                      <span class="h-12 w-12 overflow-hidden rounded-full bg-gray-100">
+                                        <svg class="h-full w-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                                          <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+                                        </svg>
+                                      </span>
+                                      <button type="button" class="ml-5 rounded-md border border-gray-300 bg-white py-2 px-3 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Change</button>
+                                    </div>
+                                  </div>
+                              </div>
+                          
+                              <label for="cover-photo" class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">Cover photo</label>
+                              <div class="mt-1 sm:col-span-2 sm:mt-0">
+                                  <div class="flex max-w-lg justify-center rounded-md border-2 border-dashed border-gray-300 px-6 pt-5 pb-6">
+                                  <div class="space-y-1 text-center">
+                                      <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
+                                      <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                      </svg>
+                                      <div class="flex text-sm text-gray-600">
+                                      <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-medium text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500">
+                                          <span>Upload a file</span>
+                                          <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                                      </label>
+                                      <p class="pl-1">or drag and drop</p>
+                                      </div>
+                                      <p class="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
+                                  </div>
+                                  </div>
+                              </div>
+                          
+                              <div>
+                                  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">Name</label>
+                                  <input type="name" name="name"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name@company.com" required>
+                              </div>
+                              <div>
+                                  <label for="company" class="block mb-2 text-sm font-medium text-gray-900 ">Company Name</label>
+                                  <input name="company" id="company"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+                              </div>
+
+                              <div>
+                                <label for="role" class="block mb-2 text-sm font-medium text-gray-900 ">Role</label>
+                                <input name="role" id="role"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+                            </div>
+                              <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save</button>
+                          
+                          </form>
+                      </div>
+                  </div>
+              </div>
+            </div> 
+
+          </section>
+
+          <section aria-label="edit-education">
+            <div id="edit-education-form" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
+              <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                  <div class="relative bg-white rounded-lg shadow ">
+                      <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="edit-education-form">
+                          <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          <span class="sr-only">Close modal</span>
+                      </button>
+                      <div class="py-6 px-6 lg:px-8">
+                          <h3 class="mb-4 text-xl font-medium text-gray-900">Edit Certification</h3>
+                          <form class="space-y-6" action="#">
+                              <div>
+                                  <label for="certificate name" class="block mb-2 text-sm font-medium text-gray-900 ">Certificate Name</label>
+                                  <input type="certificate name" name="certificate name"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name@company.com" required>
+                              </div>
+                              <div>
+                                  <label for="issued by" class="block mb-2 text-sm font-medium text-gray-900 ">Issued by </label>
+                                  <input name="issued by" id="issued by"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+                              </div>
+
+                              <div>
+                                <label for="issued on" class="block mb-2 text-sm font-medium text-gray-900 ">Issued on </label>
+                                <input type="date" name="issued on" id="issued on"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+                            </div>
+
+                            
+                              <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+            </div> 
+
+          </section>
+
+          <section aria-label="add-education">
+            <div id="add-education-form" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
+              <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                <div class="relative bg-white rounded-lg shadow ">
+                    <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="add-education-form">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="py-6 px-6 lg:px-8">
+                        <h3 class="mb-4 text-xl font-medium text-gray-900">Add Certificate</h3>
+                        <form class="space-y-6" action="#">
+                            <div>
+                                <label for="certificate name" class="block mb-2 text-sm font-medium text-gray-900 ">Certificate Name</label>
+                                <input type="certificate name" name="certificate name"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name@company.com" required>
+                            </div>
+                            <div>
+                                <label for="issued by" class="block mb-2 text-sm font-medium text-gray-900 ">Issued by </label>
+                                <input name="issued by" id="issued by"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+                            </div>
+
+                            <div>
+                              <label for="issued on" class="block mb-2 text-sm font-medium text-gray-900 ">Issued on </label>
+                              <input type="date" name="issued on" id="issued on"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+                          </div>
+
+                          
+                            <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div> 
+
+          </section>
+
+        </section>
+
+        <section aria-label="footer">
+          <div>
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 my-6 border-t">
+              <div class="xl:grid xl:grid-cols-3 xl:gap-8 mt-12">
+                  <div class="space-y-8 xl:col-span-1">
+                      <a class="flex items-center" href="#">
+                          <img class="object-scale-down pr-2 h-12" src="https://scout.eman.my/images/logo.svg" alt="">
+                      </a>
+                      <p class="text-gray-500 ">Empowering electrical industry with<br>technology and
+                          digitalization.</p>
+                      <div class="flex space-x-6">
+                          <a href="#" class="text-black hover:text-zinc-700">
+                              <span class="sr-only">Facebook</span>
+                              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                              </svg>
+                          </a>
+      
+                          <a href="#" class="text-black hover:text-zinc-700">
+                              <span class="sr-only">Twitter</span>
+                              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                              </svg>
+                          </a>
+      
+                          <a href="#" class="text-black hover:text-zinc-700">
+                              <span class="sr-only">Telegram</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30">
+                                  <path id="Icon_awesome-telegram" data-name="Icon awesome-telegram" d="M15,.563a15,15,0,1,0,15,15A15,15,0,0,0,15,.563Zm7.367,10.276-2.462,11.6c-.181.823-.671,1.022-1.355.635L14.8,20.31l-1.808,1.742a.947.947,0,0,1-.756.369L12.5,18.6l6.95-6.278c.3-.266-.067-.417-.466-.151L10.4,17.583,6.7,16.427c-.8-.254-.823-.8.169-1.192L21.327,9.659c.671-.242,1.258.163,1.04,1.179Z" transform="translate(0 -0.563)"></path>
+                              </svg>
+                          </a>
+      
+                      </div>
+                  </div>
+                  <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 xl:mt-0 xl:col-span-2">
+                      <div class="md:grid md:grid-cols-1 md:gap-0">
+                          <div class="w-auto">
+                              <h3 class="text-sm font-semibold text-black tracking-wider uppercase">Contact
+                                  Information</h3>
+                              <div class="flex flex-col mt-4">
+                                  <div class="flex flex-row place-items-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                          <path id="Path_3" data-name="Path 3" d="M2,3A1,1,0,0,1,3,2H5.153a1,1,0,0,1,.986.836l.74,4.435a1,1,0,0,1-.54,1.06L4.791,9.1A11.037,11.037,0,0,0,10.9,15.209l.774-1.548a1,1,0,0,1,1.059-.54l4.435.74a1,1,0,0,1,.836.986V17a1,1,0,0,1-1,1H15A13,13,0,0,1,2,5Z" transform="translate(-2 -2)"></path>
+                                      </svg>
+                                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 pl-5"> +603 2770 0377
+                                      </a>
+                                  </div>
+                                  <div class="flex flex-row place-items-center mt-4">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                                          <g id="Group_3" data-name="Group 3" transform="translate(-2 -4)">
+                                              <path id="Path_4" data-name="Path 4" d="M2,5.884l8,4,8-4A2,2,0,0,0,16,4H4A2,2,0,0,0,2,5.884Z"></path>
+                                              <path id="Path_5" data-name="Path 5" d="M18,8.118l-8,4-8-4V14a2,2,0,0,0,2,2H16a2,2,0,0,0,2-2Z"></path>
+                                          </g>
+                                      </svg>
+                                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 pl-5">hello@eman.my</a>
+                                  </div>
+                                  <div class="flex flex-row mt-4">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="14.001" height="16.9" viewBox="0 0 14.001 16.9">
+                                          <path id="Path_2" data-name="Path 2" d="M5.05,4.05a7,7,0,1,1,9.9,9.9L10,18.9,5.05,13.95a7,7,0,0,1,0-9.9ZM10,11A2,2,0,1,0,8,9,2,2,0,0,0,10,11Z" transform="translate(-2.999 -2)" fill-rule="evenodd"></path>
+                                      </svg>
+                                      <p class="text-gray-500 pl-5">10-08, Kenwingston Square Garden<br>
+                                          (Business Centre) Persiaran Bestari,<br>
+                                          63000 Cyberjaya, Selangor. </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="md:grid md:grid-cols-2 md:gap-8">
+                          <div>
+                              <h3 class="text-sm font-semibold text-black tracking-wider uppercase">Links</h3>
+                              <ul role="list" class="mt-4 space-y-4">
+                                  <li>
+                                      <a href="https://scout.eman.my#scout" class="text-base text-gray-500 hover:text-gray-900"> Why Scout?
+                                      </a>
+                                  </li>
+      
+                                  <li>
+                                      <a href="https://scout.eman.my#benefits" class="text-base text-gray-500 hover:text-gray-900"> Benefits
+                                      </a>
+                                  </li>
+      
+                                  <li>
+                                      <a href="https://scout.eman.my/companies" class="text-base text-gray-500 hover:text-gray-900"> Directory </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="mt-12 border-t border-gray-200 pt-8">
+                  <p class="text-base text-gray-400 xl:text-center">© 2022 Eman.my All rights reserved.</p>
+              </div>
+          </div>
+
+
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+  </body>
+</html>
